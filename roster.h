@@ -9,7 +9,7 @@
 
 class Roster {
 public:
-    void parse(string inputString);
+    void parse(string row);
     void add(string studentID, string firstName, string lastName, string emailAddress, int age, int daysInCourse1, int daysInCourse2, int daysInCourse3, DegreeProgram degreeprogram);
     void remove(string studentID);
     void printAll();
@@ -18,7 +18,7 @@ public:
     void printByDegreeProgram(DegreeProgram degreeProgram);
 
 private:
-    Student* classRosterArray[];
+    Student* classRosterArray[5];
 
 };
 

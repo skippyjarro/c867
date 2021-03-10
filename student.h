@@ -18,6 +18,7 @@ public:
     string getStudentEmailAddress() const;
     int getStudentAge() const;
     const int* getDaysToComplete() const;
+    string getDegreeProgram() const;
     void setStudentID(string studID);
     void setStudentFirstName(string fName);
     void setStudentLastName(string lName);

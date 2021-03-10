@@ -10,6 +10,7 @@ int main() {
              "A3,Jack,Napoli,The_lawyer99yahoo.com,19,20,40,33,SOFTWARE",
              "A4,Erin,Black,Erin.black@comcast.net,22,50,58,40,SECURITY",
              "A5,Nate,Sukhtipyaroge,nsukhti@wgu.edu,38,21,3,5,SOFTWARE"};
+    const int STUDENT_DATA_SIZE = 5;
 
     cout << "C867 Scripting and Programming: Applications" << endl;
     cout << "C++" << endl;
@@ -17,5 +18,11 @@ int main() {
     cout << "Nate Sukhtipyaroge" << endl;
 
     Roster classRoster;
+
+    for (int i=0;i<STUDENT_DATA_SIZE;i++) {
+        classRoster.parse(studentData[i]);
+    }
+
+    classRoster.printAll();
     return 0;
 }

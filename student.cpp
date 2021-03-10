@@ -45,23 +45,31 @@ void Student::setDaysToComplete(int daysInCourse1, int daysInCourse2, int daysIn
     return;
 }
 string Student::getStudentID() const {
-    return studentID;
+    return this->studentID;
 }
 string Student::getStudentFirstName() const {
-    return studentFirstName;
+    return this->studentFirstName;
 }
 string Student::getStudentLastName() const {
-    return studentLastName;
+    return this->studentLastName;
 }
 string Student::getStudentEmailAddress() const {
-    return studentEmailAddress;
+    return this->studentEmailAddress;
 }
 int Student::getStudentAge() const {
-    return studentAge;
+    return this->studentAge;
 }
 const int* Student::getDaysToComplete() const {
-    return daysToComplete;
+    return this->daysToComplete;
+}
+string Student::getDegreeProgram() const {
+    return degreeProgramStrings[(int)this->degreeProgram];
 }
 void Student::print() const {
-
+    cout << this->getStudentID() << "\t" <<
+         "First Name: " << this->getStudentFirstName() << "\t" <<
+         "Last Name: " << this->getStudentLastName() << "\t" <<
+         "Age: " << this->getStudentAge() << "\t" <<
+         "daysInCourse: " << this->getDaysToComplete() << "\t" <<
+         "Degree Program: " << this->getDegreeProgram() << endl;
 }
