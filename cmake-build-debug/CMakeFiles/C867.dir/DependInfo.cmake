@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/skipp/CLionProjects/c867/main.cpp" "C:/Users/skipp/CLionProjects/c867/cmake-build-debug/CMakeFiles/C867.dir/main.cpp.obj"
-  "C:/Users/skipp/CLionProjects/c867/roster.cpp" "C:/Users/skipp/CLionProjects/c867/cmake-build-debug/CMakeFiles/C867.dir/roster.cpp.obj"
-  "C:/Users/skipp/CLionProjects/c867/student.cpp" "C:/Users/skipp/CLionProjects/c867/cmake-build-debug/CMakeFiles/C867.dir/student.cpp.obj"
+  "/Users/natesukhtipyaroge/CLionProjects/c867/main.cpp" "/Users/natesukhtipyaroge/CLionProjects/c867/cmake-build-debug/CMakeFiles/C867.dir/main.cpp.o"
+  "/Users/natesukhtipyaroge/CLionProjects/c867/roster.cpp" "/Users/natesukhtipyaroge/CLionProjects/c867/cmake-build-debug/CMakeFiles/C867.dir/roster.cpp.o"
+  "/Users/natesukhtipyaroge/CLionProjects/c867/student.cpp" "/Users/natesukhtipyaroge/CLionProjects/c867/cmake-build-debug/CMakeFiles/C867.dir/student.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

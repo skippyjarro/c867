@@ -6,6 +6,7 @@
 #include <string>
 using namespace std;
 #include "student.h"
+Student::Student() {}
 Student::Student(string studID, string fName, string lName, string email, int studAge, int daysInCourse1, int daysInCourse2, int daysInCourse3, DegreeProgram program) {
     studentID = studID;
     studentFirstName = fName;
@@ -59,17 +60,17 @@ string Student::getStudentEmailAddress() const {
 int Student::getStudentAge() const {
     return this->studentAge;
 }
-const int* Student::getDaysToComplete() const {
-    return this->daysToComplete;
+int *Student::getDaysToComplete() {
+    return daysToComplete;
 }
-string Student::getDegreeProgram() const {
-    return degreeProgramStrings[(int)this->degreeProgram];
+DegreeProgram Student::getDegreeProgram() const {
+    return this->degreeProgram;
 }
-void Student::print() const {
+void Student::print() {
     cout << this->getStudentID() << "\t" <<
          "First Name: " << this->getStudentFirstName() << "\t" <<
          "Last Name: " << this->getStudentLastName() << "\t" <<
          "Age: " << this->getStudentAge() << "\t" <<
-         "daysInCourse: " << this->getDaysToComplete() << "\t" <<
-         "Degree Program: " << this->getDegreeProgram() << endl;
+         "daysInCourse: {" << daysToComplete[0] << ", " << daysToComplete[1] << ", " << daysToComplete[2] << "}" << "\t" <<
+         "Degree Program: " << degreeProgramStrings[(int)this->getDegreeProgram()] << endl;
 }

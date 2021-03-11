@@ -7,7 +7,7 @@
 #include <string>
 using namespace std;
 
-enum class DegreeProgram {
+enum DegreeProgram {
     SECURITY,
     NETWORK,
     SOFTWARE

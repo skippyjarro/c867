@@ -1,6 +1,7 @@
 #include "roster.h"
 #include <iostream>
 #include <string>
+#include "degree.h"
 using namespace std;
 
 int main() {
@@ -16,6 +17,8 @@ int main() {
     cout << "C++" << endl;
     cout << "Student ID: 000264559" << endl;
     cout << "Nate Sukhtipyaroge" << endl;
+    cout << endl;
+
 
     Roster classRoster;
 
@@ -23,6 +26,30 @@ int main() {
         classRoster.parse(studentData[i]);
     }
 
+    cout << "Function: classRoster.printAll();"<< endl;
     classRoster.printAll();
+
+    cout << "Function: classRoster.printInvalidEmails();" << endl;
+    classRoster.printInvalidEmails();
+
+    cout << "//loop through classRosterArray and for each element:" << endl;
+    cout << "Function: classRoster.printAverageDaysInCourse(/*current_object's student id*/);" << endl;
+    for (int i=1; i<=STUDENT_DATA_SIZE; i++) {
+        classRoster.printAverageDaysInCourse("A" + to_string(i));
+    }
+
+    cout << "Function: classRoster.printByDegreeProgram(SOFTWARE);" << endl;
+    classRoster.printByDegreeProgram(SOFTWARE);
+
+    cout << "Function: classRoster.remove(\"A3\");" << endl;
+    classRoster.remove("A3");
+
+    cout << "Function: classRoster.printAll()" << endl;
+    classRoster.printAll();
+
+    cout << "Function: classRoster.remove(\"A3\");\n"
+            "//expected: the above line should print a message saying such a student with this ID was not found." << endl;
+    classRoster.remove("A3");
+
     return 0;
 }

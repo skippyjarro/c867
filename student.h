@@ -11,21 +11,22 @@ using namespace std;
 
 class Student {
 public:
+    Student();
     Student(string studID, string fName, string lName, string email, int studAge, int daysInCourse1, int dayInCourse2, int daysInCourse3, DegreeProgram program);
     string getStudentID() const;
     string getStudentFirstName() const;
     string getStudentLastName() const;
     string getStudentEmailAddress() const;
     int getStudentAge() const;
-    const int* getDaysToComplete() const;
-    string getDegreeProgram() const;
+    int *getDaysToComplete();
+    DegreeProgram getDegreeProgram() const;
     void setStudentID(string studID);
     void setStudentFirstName(string fName);
     void setStudentLastName(string lName);
     void setStudentEmailAddress(string email);
     void setStudentAge(int studAge);
     void setDaysToComplete(int daysInCourse1, int daysInCourse2, int daysInCourse3);
-    void print() const;
+    void print();
 
 
 private:
