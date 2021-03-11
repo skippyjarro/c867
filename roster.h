@@ -6,6 +6,8 @@
 #define C867_ROSTER_H
 #include "student.h"
 
+using namespace std;
+
 
 class Roster {
 public:
@@ -19,6 +21,7 @@ public:
 
 private:
     Student* classRosterArray[5];
+    int rosterIndex = 0;
 
 };
 
